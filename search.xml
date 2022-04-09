@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>CSp2021 游寄</title>
+    <url>/p/CSp2021-%E6%B8%B8%E5%AF%84/</url>
+    <content><![CDATA[<p>坐标：BJ</p>
+<span id="more"></span>
+
+<h2 id="初赛"><a href="#初赛" class="headerlink" title="初赛"></a>初赛</h2><h3 id="Day-1"><a href="#Day-1" class="headerlink" title="Day -1"></a>Day -1</h3><p>什么也没复习！！！</p>
+<p>学校集训的时候在打osu没听课（逃</p>
+<p>所以肯定过不了初赛！！！</p>
+<h3 id="Day-1-1"><a href="#Day-1-1" class="headerlink" title="Day 1"></a>Day 1</h3><h4 id="S"><a href="#S" class="headerlink" title="S"></a>S</h4><p>这都是什么jb题啊，base64又是什么啊？？？</p>
+<p>四毛子？？？只能说ccf你萌死了。。。</p>
+<h2 id="复赛"><a href="#复赛" class="headerlink" title="复赛"></a>复赛</h2><h3 id="Day-n"><a href="#Day-n" class="headerlink" title="Day -n"></a>Day -n</h3><p>好吧只能说苟过去了初赛。</p>
+<p>国庆集训两天，继续打osu<img src="//%E5%95%A7.tk/hanx"></p>
+<p>一直在打暴力，因为教练知道我技术不行，说保有分挣2=，好吧……</p>
+<p>暴力，暴力，暴力，，，</p>
+<h3 id="Day-3"><a href="#Day-3" class="headerlink" title="Day -3"></a>Day -3</h3><p>因为 whk 被班主任找了……</p>
+<p>身心受到极大打击。</p>
+<h3 id="Day-2"><a href="#Day-2" class="headerlink" title="Day -2"></a>Day -2</h3><p>简单复习了复习基础的东西，其他什么也不会。</p>
+<h3 id="Day-1-2"><a href="#Day-1-2" class="headerlink" title="Day -1"></a>Day -1</h3><p>水群，发现别人会的自己什么也不会，我直接退役吧……<img src="//%E5%95%A7.tk/youl"></p>
+<p>继续练习自己的暴力能力<img src="//%E5%95%A7.tk/tuu"></p>
+<p>突然通知考场被取消了，换了一个考场，有点惊讶。</p>
+<h3 id="Day-1-3"><a href="#Day-1-3" class="headerlink" title="Day 1"></a>Day 1</h3><p>提前半小时到了考场，真的好冷，风也好大，为什么去年也是这样。</p>
+<p>到考场后发现是在图书馆电子阅览室，两台电脑真的很近，中间也没隔板<img src="//%E5%95%A7.tk/xyx"></p>
+<p>里面好大，还空着6排电脑。</p>
+<p>惊讶：电脑里没虚拟机，是32位，无法用万能头，，</p>
+<p>监考说本来我们都考不了了，是百般争取才可以来这里考，笑了。</p>
+<p>解压密码输错两次，预计两题抱铃（铃<img src="//%E5%95%A7.tk/qq">）</p>
+<p>开题顺序：A-C-B-D</p>
+<h4 id="A"><a href="#A" class="headerlink" title="A"></a>A</h4><p>只会打暴力……</p>
+<p>于是暴力模拟，写了大概1h，发现大样例过不去，弃……</p>
+<h4 id="B"><a href="#B" class="headerlink" title="B"></a>B</h4><p>不会写（弃）</p>
+<h4 id="C"><a href="#C" class="headerlink" title="C"></a>C</h4><p>暴力，调了1h发现大样例过得去！！！</p>
+<p>后来就没看</p>
+<p>然后瞟了一眼D发现并不会……</p>
+<p>于是开始摸……摸……摸……</p>
+<p>又去想了想B，发现回了，只是没时间了。</p>
+<p>判断合法一直写挂。</p>
+<p>没判 <code>(*()*)</code> 我是sb好吧……</p>
+<p>总而言之啊……又是一年浪费了呢……</p>
+<h3 id="Day-1-4"><a href="#Day-1-4" class="headerlink" title="Day -(-1)"></a>Day -(-1)</h3><p><img src="//%E5%95%A7.tk/youl"><img src="//%E5%95%A7.tk/youl"><img src="//%E5%95%A7.tk/youl"></p>
+<p>发现还是需要在学一些算法啊，只能打暴力不行啊……</p>
+<p>发现自己什么也不会……</p>
+<h3 id="Day-n-1"><a href="#Day-n-1" class="headerlink" title="Day -(-n)"></a>Day -(-n)</h3><p>大家……一定要好好活下去啊……</p>
+<p>希望我能好好活下去……</p>
+]]></content>
+      <tags>
+        <tag>游记</tag>
+        <tag>CSp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P2206 奶牛芭蕾</title>
+    <url>/p/P2206-%E5%A5%B6%E7%89%9B%E8%8A%AD%E8%95%BE/</url>
+    <content><![CDATA[<p>一道模拟好题<img src="//%E5%95%A7.tk/qiang"></p>
+<span id="more"></span>
+
+<h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p>根据各个指令模拟奶牛动作，最终求出奶牛横纵坐标最大值，并求面积。</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>纯模拟即可。</p>
+<p>用 $x,y$ 去存四条腿的坐标偏移</p>
+<p>因为奶牛有朝向，所以我们的方向偏移数组 $d_x,d_y$ 存储转向时，应当按照顺时针顺序，这样转向时只需加一即可，因为有四个方向，所以当超过四时进行 %4 即可解决。</p>
+<p>转到各个方向其实就相当于转了多少了 $90^{\circ}$。</p>
+<h3 id="code"><a href="#code" class="headerlink" title="code"></a>code</h3><pre><code class="cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+//aks
+inline int read() &#123;
+    char c=getchar(),f=0;int t=0;
+    for (;c&lt;&#39;0&#39;||c&gt;&#39;9&#39;; c=getchar()) if (!(c^45)) f=1;
+    for (;c&gt;=&#39;0&#39;&amp;&amp;c&lt;=&#39;9&#39;;c=getchar()) t=(t&lt;&lt;1)+(t&lt;&lt;3)+(c^48);
+    return f?-t:t;
+&#125;
+inline void write(int x) &#123;
+    static int t[25]; int tp=0;
+    if (x==0) return (void)(putchar(&#39;0&#39;)); else if (x&lt;0) putchar(&#39;-&#39;), x=-x;
+    while (x) t[tp++]=x%10,x/=10;
+    while (tp--) putchar(t[tp]+48);
+&#125;
+int n, minx, maxx, miny, maxy;//n条指令，x最小最大值，y最小最大值 
+int x[] = &#123;0, 1, 1, 0&#125;; // 0FL， 1FR 
+int y[] = &#123;1, 1, 0, 0&#125;; // 2RR， 3RL 
+int dx[] = &#123;0, 1, 0, -1&#125;; //0上， 1右， 2下， 3左 
+int dy[] = &#123;1, 0, -1, 0&#125;;
+int d; // 当前方向 
+int main() &#123;
+    n = read();
+    for (int i = 1; i &lt;= n; i++) &#123;
+        char a, b, op;
+        cin &gt;&gt; a &gt;&gt; b &gt;&gt; op;
+        int f;
+        if (a == &#39;F&#39; &amp;&amp; b == &#39;L&#39;) f = 0; // 前左腿
+        if (a == &#39;F&#39; &amp;&amp; b == &#39;R&#39;) f = 1; // 前右腿
+        if (a == &#39;R&#39; &amp;&amp; b == &#39;R&#39;) f = 2; // 后右腿
+        if (a == &#39;R&#39; &amp;&amp; b == &#39;L&#39;) f = 3; // 后左腿
+        if (op == &#39;F&#39;) x[f] += dx[d], y[f] += dy[d]; // 向前走一步 
+        if (op == &#39;B&#39;) x[f] += dx[(d + 2) % 4], y[f] += dy[(d + 2) % 4]; // 顺时针 180（向后退）
+        if (op == &#39;L&#39;) x[f] += dx[(d + 3) % 4], y[f] += dy[(d + 3) % 4]; // 顺时针 270（向左）
+        if (op == &#39;R&#39;) x[f] += dx[(d + 1) % 4], y[f] += dy[(d + 1) % 4]; // 顺时针 90（向右）
+        if (op == &#39;P&#39;) &#123;
+            int x0 = x[f], y0 = y[f];
+            for (int i = 0; i &lt;= 3; i++) &#123; // 将第x[i], y[i]绕x[f], y[f]顺时针旋转90度 
+                x[i] -= x0, y[i] -= y0;
+                swap(x[i], y[i]);
+                y[i] = -y[i];
+                x[i] += x0, y[i] += y0;
+            &#125;
+            d = (d + 1) % 4;
+        &#125;
+        for (int i = 0; i &lt;= 3; i++) // 枚举第 i 条腿 
+            for (int j = i + 1; j &lt;= 3; j++) // 枚举第 j 条腿 
+                if (x[i] == x[j] &amp;&amp; y[i] == y[j]) &#123; // 绊倒 
+                    puts(&quot;-1&quot;);
+                    return 0;
+                &#125;
+        for (int i = 0; i &lt;= 3; i++) &#123;
+            minx = min(minx, x[i]);
+            miny = min(miny, y[i]);
+            maxx = max(maxx, x[i]);
+            maxy = max(maxy, y[i]);
+        &#125;
+    &#125;
+    cout &lt;&lt; (maxx - minx + 1) * (maxy - miny + 1) &lt;&lt; endl;
+    return 0;
+&#125;
+
+</code></pre>
+]]></content>
+      <tags>
+        <tag>模拟</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>洛谷快捷键LuoguShortcutKeys</title>
+    <url>/p/%E6%B4%9B%E8%B0%B7%E5%BF%AB%E6%8D%B7%E9%94%AELuoguShortcutKeys/</url>
+    <content><![CDATA[<p><a href="https://greasyfork.org/zh-CN/scripts/428234">宣传一下</a></p>
+<p>当前版本：v0.5</p>
+<p>一款使你的洛谷更加便捷的脚本！</p>
+<span id="more"></span>
+
+<h3 id="当前功能"><a href="#当前功能" class="headerlink" title="当前功能"></a>当前功能</h3><ul>
+<li>内测版提供Ctrl+Enter发送犇犇、帖子内回复</li>
+<li>全新键盘监听方式</li>
+</ul>
+<h3 id="预计更新"><a href="#预计更新" class="headerlink" title="预计更新"></a>预计更新</h3><ul>
+<li>多种初始快捷键</li>
+<li>自定义快捷键</li>
+<li>更加精彩的手势</li>
+<li>等等等。。。</li>
+</ul>
+<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><ul>
+<li>v0.1: 基础版本，发布最基础功能</li>
+<li>v0.5: 增加Ctrl+Enter发送帖子回复；全新键盘监听方式；全新console</li>
+</ul>
+<p>顺便球球帮忙看看bug<img src="//%E5%95%A7.tk/wq"><img src="//%E5%95%A7.tk/kk"></p>
+]]></content>
+      <tags>
+        <tag>项目</tag>
+        <tag>js</tag>
+        <tag>油猴</tag>
+      </tags>
+  </entry>
+</search>
