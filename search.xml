@@ -160,12 +160,13 @@ int main() &#123;
   <entry>
     <title>树与二叉树</title>
     <url>/p/%E6%A0%91%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><ol>
+<li>定义：由 $n(n \ge 30)$ 个节点的有限级。（$n=0$ 时成为空树）</li>
+</ol>
+<span id="more"></span>
 
-<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><ol>
-<li><p>定义：由 $n(n \ge 30)$ 个节点的有限级。（$n=0$ 时成为空树）</p>
-<p> <img src="https://i.loli.net/2021/01/31/JhXa4dvsEpimIN2.png" alt="graph.png"></p>
-</li>
+<p><img src="https://i.loli.net/2021/01/31/JhXa4dvsEpimIN2.png" alt="graph.png"></p>
+<ol start="2">
 <li><p>结点的度：子节点的度</p>
 </li>
 <li><p>结点关系：  </p>
@@ -303,10 +304,11 @@ int main() &#123;
   <entry>
     <title>[AT3621][ARC084B] Small Multiple</title>
     <url>/p/AT3621-ARC084B-Small-Multiple/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h3><p>我们先考虑暴力，把 $K$ 的倍数枚举，每枚举一个取每位求和。  </p>
+    <content><![CDATA[<h3 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h3><p>我们先考虑暴力，把 $K$ 的倍数枚举，每枚举一个取每位求和。  </p>
 <p>这肯定超时，关键是循环取每位爆炸，那么我们不妨想，一个数的各个位数和是如何求出的。</p>
+<span id="more"></span>
+
+
 <p>先看个位，$1$ 的位和为 $1$，$2$ 就在 $1$ 的前提下 $+1$ 以此类推，就能求出个位位和。  </p>
 <p>再看其他位，无非就是 $n$ 个 $10$ 加上若干 $1$，思考 $10$，我们可以用 $1 \times 10$ 来表示，那各位和仍为 $1$。</p>
 <p>综上，我们可以整理出两种状态：$+1$ 与 $\times 10$，那么 $+1$ 是各位和 $+1$，可 $\times 10$ 各位和却不便，故可以转换为 <strong>01 bfs</strong>，如图</p>
@@ -431,9 +433,9 @@ int main() &#123;
   <entry>
     <title>[游记] CSp2020</title>
     <url>/p/CSp2020-%E6%B8%B8%E8%AE%B0/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<h1 id="初赛"><a href="#初赛" class="headerlink" title="初赛"></a>初赛</h1><h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day -2"></a>Day -2</h2><p>做了个模拟（非洛谷），只有<strong>一丁点</strong>分，显然过不了</p>
+<span id="more"></span>
 
-<h1 id="初赛"><a href="#初赛" class="headerlink" title="初赛"></a>初赛</h1><h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day -2"></a>Day -2</h2><p>做了个模拟（非洛谷），只有<strong>一丁点</strong>分，显然过不了</p>
 <p><del>（盗张 i am ak f 的图）</del></p>
 <p><img src="https://s1.ax1x.com/2020/10/11/0gU1nP.png" alt="0gU1nP.png"></p>
 <h2 id="Day-0"><a href="#Day-0" class="headerlink" title="Day 0"></a>Day 0</h2><p>颓，颓，颓，又做了一套模拟，坚定了退役的信心。</p>

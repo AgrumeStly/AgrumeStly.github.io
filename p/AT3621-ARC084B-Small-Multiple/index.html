@@ -86,16 +86,16 @@
 
 
 
-<meta name="description" content="solution我们先考虑暴力，把 $K$ 的倍数枚举，每枚举一个取每位求和。   这肯定超时，关键是循环取每位爆炸，那么我们不妨想，一个数的各个位数和是如何求出的。 先看个位，$1$ 的位和为 $1$，$2$ 就在 $1$ 的前提下 $+1$ 以此类推，就能求出个位位和。   再看其他位，无非就是 $n$ 个 $10$ 加上若干 $1$，思考 $10$，我们可以用 $1 \times 10$">
+<meta name="description" content="solution我们先考虑暴力，把 $K$ 的倍数枚举，每枚举一个取每位求和。   这肯定超时，关键是循环取每位爆炸，那么我们不妨想，一个数的各个位数和是如何求出的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[AT3621][ARC084B] Small Multiple">
 <meta property="og:url" content="https://agrumestly.github.io/p/AT3621-ARC084B-Small-Multiple/index.html">
 <meta property="og:site_name" content="AgrumeStly的博客">
-<meta property="og:description" content="solution我们先考虑暴力，把 $K$ 的倍数枚举，每枚举一个取每位求和。   这肯定超时，关键是循环取每位爆炸，那么我们不妨想，一个数的各个位数和是如何求出的。 先看个位，$1$ 的位和为 $1$，$2$ 就在 $1$ 的前提下 $+1$ 以此类推，就能求出个位位和。   再看其他位，无非就是 $n$ 个 $10$ 加上若干 $1$，思考 $10$，我们可以用 $1 \times 10$">
+<meta property="og:description" content="solution我们先考虑暴力，把 $K$ 的倍数枚举，每枚举一个取每位求和。   这肯定超时，关键是循环取每位爆炸，那么我们不妨想，一个数的各个位数和是如何求出的。">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/qhejrx3s.png">
 <meta property="article:published_time" content="2022-04-09T07:39:44.000Z">
-<meta property="article:modified_time" content="2022-04-09T07:41:37.511Z">
+<meta property="article:modified_time" content="2022-04-09T07:55:01.607Z">
 <meta property="article:author" content="AgrumeStly">
 <meta property="article:tag" content="bfs">
 <meta property="article:tag" content="搜索">
@@ -421,10 +421,11 @@
       
 
       
-        <span id="more"></span>
-
-<h3 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h3><p>我们先考虑暴力，把 $K$ 的倍数枚举，每枚举一个取每位求和。  </p>
+        <h3 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h3><p>我们先考虑暴力，把 $K$ 的倍数枚举，每枚举一个取每位求和。  </p>
 <p>这肯定超时，关键是循环取每位爆炸，那么我们不妨想，一个数的各个位数和是如何求出的。</p>
+<span id="more"></span>
+
+
 <p>先看个位，$1$ 的位和为 $1$，$2$ 就在 $1$ 的前提下 $+1$ 以此类推，就能求出个位位和。  </p>
 <p>再看其他位，无非就是 $n$ 个 $10$ 加上若干 $1$，思考 $10$，我们可以用 $1 \times 10$ 来表示，那各位和仍为 $1$。</p>
 <p>综上，我们可以整理出两种状态：$+1$ 与 $\times 10$，那么 $+1$ 是各位和 $+1$，可 $\times 10$ 各位和却不便，故可以转换为 <strong>01 bfs</strong>，如图</p>
