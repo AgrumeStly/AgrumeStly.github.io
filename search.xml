@@ -573,4 +573,43 @@ int main() &#123;
         <tag>文</tag>
       </tags>
   </entry>
+  <entry>
+    <title>杂题选做</title>
+    <url>/p/%E6%9D%82%E9%A2%98%E9%80%89%E5%81%9A/</url>
+    <content><![CDATA[<p>给定序列 $a_0, a_1, \ldots, a_{N-1}$ 以及若干询问。对于每个询问，给定区间 $[L, R]$，请你在 $a_l, a_{l+1}, \ldots, a_r$ 内寻找最长的连续子段，使得子段内的数互不相同。</p>
+<!--- more --->
+
+<p>$1 \le N, M \le 2 \times 10^5$，$0 \le L \le R \le N-1$，$|a_i| \le 10^6$。</p>
+<p><strong>考虑暴力。</strong></p>
+<p>对于每个询问，枚举左端点，枚举右端点，求最长子段。</p>
+<p><strong>考虑优化。</strong></p>
+<p>提前枚举左端点，枚举右端点，预处理 $b_i$ 表示以 $i$ 为左端点的最长子段。对于每个询问，查询子段全部在区间内的最大长度和不在区间内的最大长度。</p>
+<p><strong>考虑再次优化。</strong></p>
+<p>预处理 $b_i$ 时，可以使用双指针方法，每次记录出现过的数，在左端点往右移动一格时，右端点不断往右移，直到出现重复的数，记录长度。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> cnt = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span> (!box[a[cnt]] &amp;&amp; cnt &lt;= n) &#123;</span><br><span class="line">    box[a[cnt]] = <span class="literal">true</span>;</span><br><span class="line">    ++cnt;</span><br><span class="line">    ++num;</span><br><span class="line">&#125;</span><br><span class="line">b[<span class="number">1</span>] = num;</span><br><span class="line"><span class="keyword">int</span> l = <span class="number">1</span>, r = cnt;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    box[a[l]] = <span class="literal">false</span>;</span><br><span class="line">    ++l, --num;</span><br><span class="line">    <span class="keyword">while</span> (r &lt;= n &amp;&amp; !box[a[r]]) &#123;</span><br><span class="line">        box[a[r]] = <span class="literal">true</span>;</span><br><span class="line">        ++num;</span><br><span class="line">        ++r;</span><br><span class="line">    &#125;</span><br><span class="line">    b[l] = num;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>查询区间最大长度时，可以维护st表，解决区间rmq问题。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; (<span class="number">1</span> &lt;&lt; k) &lt;= n; k++)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i + (<span class="number">1</span> &lt;&lt; k) - <span class="number">1</span> &lt;= n; i++)</span><br><span class="line">            f[i][k] = <span class="built_in">max</span>(f[i][k - <span class="number">1</span>], f[i + (<span class="number">1</span> &lt;&lt; k - <span class="number">1</span>)][k - <span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> p, <span class="keyword">int</span> q)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> k = <span class="built_in">log2</span>(q - p + <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">max</span>(f[p][k], f[q - (<span class="number">1</span> &lt;&lt; k) + <span class="number">1</span>][k]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于子段不在区间范围内的，因为若以 $p$ 为左端点的最长序列的右端点 $q$ 超过区间右端点 $r$，那么以 $p + 1$ 为左端点的最长序列必然超出区间右端点，有单调性，故可以考虑二分，用二分求出第一个左端点为 $cnt$ 的超出区间范围的子段。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">check</span><span class="params">(<span class="keyword">int</span> mid, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (mid + b[mid] - <span class="number">1</span> &gt; r) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里分三种情况：</p>
+<ol>
+<li>既有超出的，又有没超出的。</li>
+<li>全部超出</li>
+<li>全部没有超出</li>
+</ol>
+<p>对于第一种情况。分别在：$l$ 到 $cnt - 1$ 中取最大；$cnt$ 到 $r$ 的长度中取最大；  </p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">ans = <span class="built_in">query</span>(l, r);</span><br></pre></td></tr></table></figure>
+
+<p>对于第二种情况。直接求 $l$ 到 $r$ 的长度；  </p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">ans = r - l + <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<p>对于第三种情况。直接求 $l$ 到 $r$ 中最大值。  </p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="built_in">max</span>(<span class="built_in">query</span>(l, cnt - <span class="number">1</span>), r - cnt + <span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>坑点</strong>：注意数据范围 $a_i$ 会出现负数，故在统计是否出现时，需要考虑数组下标为负数的问题。</p>
+]]></content>
+  </entry>
 </search>
